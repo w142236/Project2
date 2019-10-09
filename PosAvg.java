@@ -20,10 +20,9 @@ public class PosAvg {
 	}
 	public int indexOfStation() {
 		for (int i = 0; i < MesoList.size();i++) {
-			//System.out.println(MesoList.size());//WORKS!
+			System.out.println(MesoList.size());//WORKS!
 			if(MesoList.get(i).trim().equals(id)) {
 				this.index = i;
-				System.out.println(MesoList.get(index));
 			}
 		}
 		//this.index+=1;
