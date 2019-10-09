@@ -11,7 +11,7 @@ public class PosAvg {
 	public PosAvg(String id) {
 		this.id = id;
 		try {
-			this.MesoObject = new MesoInherit();
+			MesoObject = new MesoInherit();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -23,7 +23,7 @@ public class PosAvg {
 			//System.out.println(MesoList.size());//WORKS!
 			if(MesoList.get(i).trim().equals(id)) {
 				this.index = i;
-				System.out.println(index);
+				System.out.println(MesoList.get(index));
 			}
 		}
 		//this.index+=1;
