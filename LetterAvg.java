@@ -30,12 +30,13 @@ public LetterAvg(char letterAverage) {
 }
 	public int numberOfStationWithLetterAvg() {
 		// TODO Auto-generated method stub
-		String str = "";
-		for (int i = 0; i < LetterAvgList.size();i++) {
-			str += LetterAvgList.get(i) + "\n";
-			//System.out.println(LetterAvgList.get(i));
-		}
 		return LetterAvgList.size();
 	}
-
+	public String toString() {
+		String str = "";
+		for (int i = 0; i < LetterAvgList.size(); i++) {
+			str += LetterAvgList.get(i) + "\n";
+		}
+		return str;
+	}
 }
