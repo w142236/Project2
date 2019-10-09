@@ -4,8 +4,8 @@ import java.util.Collection;
 
 public class PosAvg {
 	protected String id;
-	private ArrayList<String> MesoList;
-	private MesoInherit MesoObject;
+	protected ArrayList<String> MesoList;
+	protected MesoInherit MesoObject;
 	private int index;
 	
 	public PosAvg(String id) {
@@ -24,8 +24,8 @@ public class PosAvg {
 				this.index = i;
 			}
 		}
-		this.index -= 119;
-		//this.index+=1;
+		
+		this.index+=1;
 		//System.out.println(index);
 		return this.index;
 	}
@@ -41,13 +41,14 @@ public class PosAvg {
 		ArrayList<Integer> pairs = new ArrayList<Integer>();
 		//int baseline = 0; //wnat to shift the start position of comparison to the right after each outer loop completes
 		int midpoint = index;
-		//System.out.println(midpoint);
-		//for (int i = midpoint; i < MesoList.size();i++)
-		int i = 0;
-		while (midpoint+i < (MesoList.size()/2))
+		int i = 1;
+		while (midpoint+i < (MesoList.size()))
 		{
 			if (((midpoint + i) + (midpoint - i))/2 == midpoint) {
-			string += MesoList.get(midpoint-i).trim() + " and " + MesoList.get(midpoint+i).trim() + ", ";
+			string += MesoList.get(midpoint-i).trim() + " and ";
+			string += MesoList.get(midpoint+i).trim() + ", ";
+			System.out.println(midpoint - i);
+			System.out.println(midpoint + i);
 			}
 			i++;
 		}

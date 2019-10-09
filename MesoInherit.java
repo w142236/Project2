@@ -10,7 +10,7 @@ public class MesoInherit extends MesoAbstract {//Implements the calAverage behav
 	 * Here you must inherit the abstract class/method as necessary
 	 */
 	String filename = "C:/Users/Will/eclipse-workspace/Project_2/src/Mesonet.txt";
-	private static ArrayList<String> MesoList = new ArrayList<String>();
+	private ArrayList<String> MesoList = new ArrayList<String>();
 	private MesoStation mesoStation;
 	
 	
