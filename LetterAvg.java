@@ -4,7 +4,7 @@ public class LetterAvg{
 private MesoInherit mesoObject;
 private ArrayList<String> MesoList;
 public LetterAvg(char letterAverage) {
-	this.MesoList = mesoObject.getMesoList();
+	//this.MesoList = mesoObject.getMesoList();
 	//System.out.println(mesoObject.getMesoList().size());
 //	for (int i = 0; i < mesoObject.getMesoList().size(); i++) {
 //		if(mesoObject.getMesoList().get(i).charAt(0)==letterAverage) {
