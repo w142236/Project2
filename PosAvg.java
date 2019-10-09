@@ -20,11 +20,11 @@ public class PosAvg {
 	}
 	public int indexOfStation() {
 		for (int i = 0; i < MesoList.size();i++) {
-			System.out.println(MesoList.size());//WORKS!
 			if(MesoList.get(i).trim().equals(id)) {
 				this.index = i;
 			}
 		}
+		this.index -= 119;
 		//this.index+=1;
 		//System.out.println(index);
 		return this.index;
@@ -40,10 +40,11 @@ public class PosAvg {
 		String string = "This index is average of ";
 		ArrayList<Integer> pairs = new ArrayList<Integer>();
 		//int baseline = 0; //wnat to shift the start position of comparison to the right after each outer loop completes
-		int midpoint = index-1;
+		int midpoint = index;
+		//System.out.println(midpoint);
 		//for (int i = midpoint; i < MesoList.size();i++)
 		int i = 0;
-		while (midpoint+i < MesoList.size())
+		while (midpoint+i < (MesoList.size()/2))
 		{
 			if (((midpoint + i) + (midpoint - i))/2 == midpoint) {
 			//System.out.println("pass");
