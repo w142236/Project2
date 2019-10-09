@@ -51,8 +51,8 @@ public class PosAvg {
 			pairs.add(midpoint+i);
 			
 			}
-		
 		}
+		string+="and so on.";
 		return string;
 	}
 	public char returnChar() {
