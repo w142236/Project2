@@ -25,10 +25,11 @@ public LetterAvg(char letterAverage) {
 	for (int i = 0; i < MesoList.size(); i++) {
 		if(MesoList.get(i).charAt(1) == letterAverage) {
 			LetterAvgList.add(MesoList.get(i));
-			System.out.println(MesoList.get(i).charAt(1));
 		}
 	}
-		
+		for (int i = 0; i<LetterAvgList.size();i++) {
+			System.out.println(LetterAvgList.get(i));
+		}
 	
 }
 	public String numberOfStationWithLetterAvg() {
