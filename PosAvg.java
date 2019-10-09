@@ -47,18 +47,10 @@ public class PosAvg {
 		while (midpoint+i < (MesoList.size()/2))
 		{
 			if (((midpoint + i) + (midpoint - i))/2 == midpoint) {
-			//System.out.println("pass");
-			//pairs.add(index-i);
-			//pairs.add(index+i);
 			string += MesoList.get(midpoint-i).trim() + " and " + MesoList.get(midpoint+i).trim() + ", ";
-			//string += "a";
 			}
 			i++;
 		}
-			
-		/*for (int i = 0; i < MesoList.size(); i++) {
-			string += MesoList.get(i).trim() + " and " + MesoList.get(i);
-		}*/
 		return string;
 	}
 	public char returnChar() {
