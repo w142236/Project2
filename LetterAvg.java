@@ -33,10 +33,11 @@ public LetterAvg(char letterAverage) {
 		return LetterAvgList.size();
 	}
 	public String toString() {
-		String str = "They are:\n";
+		String str = "\nThey are:";
 		for (int i = 0; i < LetterAvgList.size(); i++) {
-			str += LetterAvgList.get(i).trim() + "\n";
+			str += "\n" + LetterAvgList.get(i).trim();
 		}
+		
 		return str;
 	}
 }
