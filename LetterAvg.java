@@ -32,8 +32,8 @@ public LetterAvg(char letterAverage) {
 		// TODO Auto-generated method stub
 		String str = "";
 		for (int i = 0; i < LetterAvgList.size();i++) {
-			//str += LetterAvgList.get(i) + "\n";
-			System.out.println(LetterAvgList.get(i));
+			str += LetterAvgList.get(i) + "\n";
+			//System.out.println(LetterAvgList.get(i));
 		}
 		return str;
 	}
