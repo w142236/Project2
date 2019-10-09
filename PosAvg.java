@@ -18,6 +18,7 @@ public class PosAvg {
 			e.printStackTrace();
 		}
 		MesoList = MesoObject.getMesoList();
+		this.pairs = this.getPairs();
 	}
 	public int indexOfStation() {
 		for (int i = 0; i < MesoList.size();i++) {

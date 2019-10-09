@@ -14,6 +14,21 @@ public class MesoInherit extends MesoAbstract {//Implements the calAverage behav
 	private MesoStation mesoStation;
 	
 	
+	public String getFilename() {
+		return filename;
+	}
+	public void setFilename(String filename) {
+		this.filename = filename;
+	}
+	public MesoStation getMesoStation() {
+		return mesoStation;
+	}
+	public void setMesoStation(MesoStation mesoStation) {
+		this.mesoStation = mesoStation;
+	}
+	public void setMesoList(ArrayList<String> mesoList) {
+		MesoList = mesoList;
+	}
 	public MesoInherit(MesoStation mesoStation) throws IOException {
 		this.mesoStation = mesoStation;//object comparison
 		read(filename);
