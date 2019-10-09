@@ -1,26 +1,19 @@
 import java.util.ArrayList;
 
-public class LetterAvg{
+public class LetterAvg extends PosAvg{
 private MesoInherit mesoObject;
 private ArrayList<String> MesoList;
+private ArrayList<Integer> Pairs;
 public LetterAvg(char letterAverage) {
-	//this.MesoList = mesoObject.getMesoList();
-	//System.out.println(mesoObject.getMesoList().size());
-//	for (int i = 0; i < mesoObject.getMesoList().size(); i++) {
-//		if(mesoObject.getMesoList().get(i).charAt(0)==letterAverage) {
-			//MesoList.add(MesoInherit.getMesoList().get(i));
-//		}
-//		System.out.println("pass");
-//	}
+	super("NRMN");
+	Pairs = this.getPairs();
 }
 	public String numberOfStationWithLetterAvg() {
 		// TODO Auto-generated method stub
-		String str = "a";
-		System.out.println();
-//		for (int i = 0; i < MesoList.size();i++) {
-//			str += MesoList.get(i) + "\n";
-//		}
-//		return str;
+		String str = "";
+		for (int i = 0; i < pairs.size();i++) {
+			str += pairs.get(i) + "\n";
+		}
 		return str;
 	}
 
