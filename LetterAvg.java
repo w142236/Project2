@@ -27,17 +27,14 @@ public LetterAvg(char letterAverage) {
 			LetterAvgList.add(MesoList.get(i));
 		}
 	}
-		for (int i = 0; i<LetterAvgList.size();i++) {
-			System.out.println(LetterAvgList.get(i));
-		}
-	
 }
 	public String numberOfStationWithLetterAvg() {
 		// TODO Auto-generated method stub
 		String str = "";
-		//for (int i = 0; i < LetterAvgList.size();i++) {
-		//	str += LetterAvgList.get(i) + "\n";
-		//}
+		for (int i = 0; i < LetterAvgList.size();i++) {
+			//str += LetterAvgList.get(i) + "\n";
+			System.out.println(LetterAvgList.get(i));
+		}
 		return str;
 	}
 
